@@ -1,0 +1,16 @@
+from tkinter import *
+window=Tk()
+window.title("Shadows")
+window.geometry("500x900")
+window.configure(bg="#3F5C0E")
+def hello():
+    print("buttun clicked")
+button1=Button(text="ok",command=hello)
+button2=Button(text="ok",command=hello)
+button1.grid(row=0,column=0)
+button2.grid(row=1,column=0)
+label=Label(window,text="Adithyan")
+label.pack()
+button1.pack()
+button2.pack()
+window.mainloop()
